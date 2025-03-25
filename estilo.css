@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.central {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: LightGrey;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 60%;
+    width: 60%;
+    background-color: FloralWhite;
+    border: 2px solid Crimson;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid Crimson;
+    height: 15%;
+    padding: 2%;
+}
+
+.header_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid Crimson;
+    height: 8%;
+    padding: 1%;
+}
+
+form {
+    font-size: 120%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77%;
+}
+
+.item_final {
+    grid-column: span 2; /* Ocupa as duas colunas */
+}
+
+button {
+    background-color: Crimson; /* Cor de fundo */
+    cursor: pointer; /* Efeito de clicar */
+    border-radius: 8px; /* Deixar arredondado */
+    height: 90%; /* Pegar 90% do tamanho da linha */
+    color: white; /* Cor das letras */
+    border: none; /* tira a borda padrão */
+}
