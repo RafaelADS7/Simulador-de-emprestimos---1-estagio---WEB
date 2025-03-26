@@ -21,11 +21,10 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid Crimson;
     height: 60%;
     width: 60%;
     background-color: FloralWhite;
-    border: 2px solid Crimson;
 }
 
 header {
@@ -50,7 +49,7 @@ form {
     font-size: 120%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 1%;
     justify-content: center;
     align-items: center;
@@ -58,22 +57,35 @@ form {
     width: 50%;
 }
 
-main {
+button {
+    background-color: Crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 50px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: DarkRed;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-rows: auto auto; /* As linhas se adaptam ao conteúdo */
+    width: 100%;
+}
+
+.grid-item {
+    background-color: DarkRed;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 77%;
-}
-
-.item_final {
-    grid-column: span 2; /* Ocupa as duas colunas */
-}
-
-button {
-    background-color: Crimson; /* Cor de fundo */
-    cursor: pointer; /* Efeito de clicar */
-    border-radius: 8px; /* Deixar arredondado */
-    height: 90%; /* Pegar 90% do tamanho da linha */
-    color: white; /* Cor das letras */
-    border: none; /* tira a borda padrão */
+    font-size: 20px;
+    border: 3px solid black;
 }
