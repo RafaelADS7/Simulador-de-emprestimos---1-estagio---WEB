@@ -3,34 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    <title>Simulador de Empréstimos</title>
+    <link rel="stylesheet" type="text/css" href="indexteste.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="central">
+    <!-- Tela Inicial -->
+    <div id="inicial" class="central">
         <div class="container">
-            <header> 
-                <h1> Simulador de Emprestimos </h1>
+            <header>
+                <h1>Simulador de Empréstimos</h1>
             </header>
             <div class="header_2">
-                <h2> Parâmetros </h2>
+                <h2>Parâmetros</h2>
             </div>
             <main>
-                <form>
-                    <label> Valor do empréstimo </label>
-                    <input type="text" name="nome">
-                    <label> Número de parcelas </label>
-                    <input type="float" name="numero_parcelas">
-                    <label for="opcoes"> Tipo de parcelas</label>
-                    <select id="opcoes" name="opcao" onchange="this.blur();">
-                        <option value="A">Ao mês</option>
-                        <option value="B">Ao ano</option>
-                    </select>
-                    <label> Valor da taxa de juros </label>
+                <form id="formulario">
+                    <label>Valor do Empréstimo</label>
+                    <input type="text" name="valor_emprestimo">
+                    <label>Número de Parcelas</label>
+                    <input type="number" name="numero_parcelas">
+                    <label>Taxa de Juros (%)</label>
                     <input type="number" name="taxa_juros">
-                    <label> Data da primeira parcela </label>
-                    <input type="date" name="data">
-                    <button class="item_final"> Enviar </button>
+                    <label>Data da Primeira Parcela</label>
+                    <input type="date" name="data_primeira_parcela">
+                    <button type="button" onclick="mostrarResultados()">Enviar</button>
                 </form>
             </main>
         </div>
